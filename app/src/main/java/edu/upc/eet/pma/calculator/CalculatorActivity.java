@@ -5,6 +5,8 @@ import android.os.Bundle;
 
 public class CalculatorActivity extends AppCompatActivity {
 
+    // he posat un comentari nou
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
