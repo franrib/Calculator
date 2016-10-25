@@ -6,46 +6,38 @@
     android:layout_height="match_parent"
      tools:context="edu.upc.eet.pma.calculator.CalculatorActivity">
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_marginLeft="21dp"
-        android:layout_marginStart="21dp"
-        android:id="@+id/screen_text"
-        android:layout_alignBottom="@+id/button17"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:columnCount="4"
         android:rowCount="4"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:id="@+id/gridLayout">
 
         <Button
             android:text="7"
             android:layout_width="wrap_content"
             android:id="@+id/btn_n7"
             android:textSize="30sp"
-            android:layout_height="100dp" />
+            android:layout_height="100dp"
+            android:background="@color/colorPrimary"/>
 
         <Button
             android:text="8"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
             android:id="@+id/btn_n8"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:background="@color/colorPrimary"/>
 
         <Button
             android:text="9"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
             android:id="@+id/btn_n9"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:background="@color/colorPrimary"/>
 
         <Button
             android:text="/"
@@ -59,21 +51,24 @@
             android:layout_width="wrap_content"
             android:layout_height="100dp"
             android:id="@+id/btn_n4"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:background="@color/colorPrimary"/>
 
         <Button
             android:text="5"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
             android:id="@+id/btn_n5"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:background="@color/colorPrimary"/>
 
         <Button
             android:text="6"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
             android:id="@+id/btn_n6"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:background="@color/colorPrimary"/>
 
         <Button
             android:text="x"
@@ -87,21 +82,24 @@
             android:layout_width="wrap_content"
             android:layout_height="100dp"
             android:id="@+id/btn_1"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:background="@color/colorPrimary"/>
 
         <Button
             android:text="2"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
             android:id="@+id/btn_2"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:background="@color/colorPrimary"/>
 
         <Button
             android:text="3"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
             android:id="@+id/btn_n3"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:background="@color/colorPrimary"/>
 
         <Button
             android:text="-"
@@ -115,14 +113,16 @@
             android:layout_width="wrap_content"
             android:layout_height="100dp"
             android:id="@+id/btn_punt"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:background="@color/colorPrimary"/>
 
         <Button
             android:text="0"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
             android:id="@+id/btn_n0"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:background="@color/colorPrimary"/>
 
         <Button
             android:text="="
@@ -145,8 +145,17 @@
         android:layout_height="105dp"
         android:id="@+id/btn_clear"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/screen_text"
-        android:layout_toEndOf="@+id/screen_text"
-        android:layout_marginLeft="28dp"
-        android:layout_marginStart="28dp" />
+        android:layout_alignRight="@+id/gridLayout"
+        android:layout_alignEnd="@+id/gridLayout" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="none|textPersonName"
+        android:ems="10"
+        android:id="@+id/screen_text"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/gridLayout"
+        android:layout_alignStart="@+id/gridLayout"
+        android:layout_marginTop="18dp" />
 </RelativeLayout>
