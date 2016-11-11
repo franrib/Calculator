@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_calculator"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-     tools:context="edu.upc.eet.pma.calculator.CalculatorActivity">
+    tools:context="edu.upc.eet.pma.calculator.CalculatorActivity">
 
     <GridLayout
         android:layout_width="match_parent"
@@ -23,7 +24,7 @@
             android:id="@+id/btn_n7"
             android:textSize="30sp"
             android:layout_height="100dp"
-            android:background="@color/colorPrimary"/>
+            android:background="@android:color/transparent"/>
 
         <Button
             android:text="8"
@@ -31,7 +32,7 @@
             android:layout_height="100dp"
             android:id="@+id/btn_n8"
             android:textSize="30sp"
-            android:background="@color/colorPrimary"/>
+            android:background="@android:color/transparent"/>
 
         <Button
             android:text="9"
@@ -39,7 +40,7 @@
             android:layout_height="100dp"
             android:id="@+id/btn_n9"
             android:textSize="30sp"
-            android:background="@color/colorPrimary"/>
+            android:background="@android:color/transparent"/>
 
         <Button
             android:text="/"
@@ -54,7 +55,7 @@
             android:layout_height="100dp"
             android:id="@+id/btn_n4"
             android:textSize="30sp"
-            android:background="@color/colorPrimary"/>
+            android:background="@android:color/transparent"/>
 
         <Button
             android:text="5"
@@ -62,7 +63,7 @@
             android:layout_height="100dp"
             android:id="@+id/btn_n5"
             android:textSize="30sp"
-            android:background="@color/colorPrimary"/>
+            android:background="@android:color/transparent"/>
 
         <Button
             android:text="6"
@@ -70,7 +71,7 @@
             android:layout_height="100dp"
             android:id="@+id/btn_n6"
             android:textSize="30sp"
-            android:background="@color/colorPrimary"/>
+            android:background="@android:color/transparent"/>
 
         <Button
             android:text="x"
@@ -85,7 +86,7 @@
             android:layout_height="100dp"
             android:id="@+id/btn_1"
             android:textSize="30sp"
-            android:background="@color/colorPrimary"/>
+            android:background="@android:color/transparent"/>
 
         <Button
             android:text="2"
@@ -93,7 +94,7 @@
             android:layout_height="100dp"
             android:id="@+id/btn_2"
             android:textSize="30sp"
-            android:background="@color/colorPrimary"/>
+            android:background="@android:color/transparent"/>
 
         <Button
             android:text="3"
@@ -101,7 +102,7 @@
             android:layout_height="100dp"
             android:id="@+id/btn_n3"
             android:textSize="30sp"
-            android:background="@color/colorPrimary"/>
+            android:background="@android:color/transparent"/>
 
         <Button
             android:text="-"
@@ -116,7 +117,7 @@
             android:layout_height="100dp"
             android:id="@+id/btn_punt"
             android:textSize="30sp"
-            android:background="@color/colorPrimary"/>
+            android:background="@android:color/transparent"/>
 
         <Button
             android:text="0"
@@ -124,7 +125,7 @@
             android:layout_height="100dp"
             android:id="@+id/btn_n0"
             android:textSize="30sp"
-            android:background="@color/colorPrimary"/>
+            android:background="@android:color/transparent"/>
 
         <Button
             android:text="="
@@ -132,7 +133,12 @@
             android:layout_height="100dp"
             android:id="@+id/btn_solve"
             android:textSize="30sp"
+<<<<<<< HEAD
             android:background="@color/colorPrimaryDark"/>
+=======
+
+            style="@style/Widget.AppCompat.Button.Colored" />
+>>>>>>> origin/master
 
         <Button
             android:text="+"

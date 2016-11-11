@@ -1,0 +1,20 @@
+
+- Força bé el layout. Molt bé el Grid Layout.
+
+- Però falta tot el codi... en parlem a classe.
+
+- El fallo que tens és que en els colors, has posat el color de fons
+  dels botons com el "primary" i després l'has posat transparent i això
+  és com "il·legal" (peta quan executes i ho diu explícitament):
+
+      "Caused by: java.lang.RuntimeException: A TaskDescription's primary color should be opaque"
+
+  Ho he arreglat posant un color transparent d'android. La manera més fàcil és canviant l'estil
+  dels botons. Mira't els canvis amb git.
+
+- També he canviat l'estil del botó "=" perquè sigui amb el color "accent" (que he passat de rosa
+  a blau cel).
+
+- Ara almenys s'executa però no fa res, es clar.
+
+
